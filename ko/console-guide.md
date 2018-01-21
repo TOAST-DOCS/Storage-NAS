@@ -5,7 +5,7 @@
 1. [Infrastructure] > [Compute & Network] > [NAS(offline)]으로 이동한 뒤, [이용요금] 탭의 [상품 이용 신청]버튼을 클릭합니다.  
   [스크린샷]  
 
-2.[그림 2] 의 대화창에서 NAS 관련 정보를 입력합니다. 필요한 정보는 다음과 같습니다.  
+2. [그림 2] 의 대화창에서 NAS 관련 정보를 입력합니다. 필요한 정보는 다음과 같습니다.  
   [스크린샷]  
   * 신청유형  
     상품 이용 신청일 경우 [Volume 생성]으로 자동으로 입력됩니다.
@@ -66,6 +66,6 @@ sudo mount -t nfs {nas source} {mount point}
 
 * nas source: NAS volume 정보  
   예) 192.168.0.241:/data
-* mount point: NAS volume 을 마운트 할 디렉터리
+* mount point: NAS volume 을 마운트 할 디렉터리  
   예) /mnt
 
