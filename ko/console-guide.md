@@ -43,14 +43,14 @@ NAS 이용내역에서 Volume 을 삭제 할 수 있습니다. [그림 7]의 내
 
 ### nfs 패키지 설치
 
-  * Debian, Ubuntu: nfs-common, rpcbind  
-    ```
-    sudo apt-get install nfs-common rpcbind
-    ````
-  * CentOS: nfs-utils, rpcbind  
-    ```
-    sudo yum install nfs-utils rpcbind
-    ```
+* Debian, Ubuntu: nfs-common, rpcbind  
+  ```
+  sudo apt-get install nfs-common rpcbind
+  ```
+* CentOS: nfs-utils, rpcbind  
+  ```
+  sudo yum install nfs-utils rpcbind
+  ```
 
 ### rpcbind 서비스 실행
 
