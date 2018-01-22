@@ -3,7 +3,7 @@
 ## NAS 신청
 
 1. [Storage] > [NAS(offline)] 으로 이동한 뒤, [이용요금] 탭의 [상품 이용 신청]버튼을 클릭합니다.  
-  ![NAS 신청 화면 갈무리](//static.toastoven.net/prod_infrastructure/nas/nas-request.png)
+  ![NAS 신청 화면 갈무리](http://static.toastoven.net/prod_infrastructure/nas/nas-request.png)
 
 2. 관련 정보를 입력합니다.
   * 신청유형  
@@ -24,7 +24,7 @@
 
 [Storage] > [NAS(offline)] > [이용내역] 섹션에 이용내역이 표시됩니다.
 
-![NAS 이용내역 화면 갈무리](//static.toastoven.net/prod_infrastructure/nas/nas-volume-list.png)
+![NAS 이용내역 화면 갈무리](http://static.toastoven.net/prod_infrastructure/nas/nas-volume-list.png)
 
 
 ## Volume 증설
@@ -32,7 +32,7 @@
 NAS 이용내역에서 Volume 증설을 할 수 있습니다. Volume증설은 NAS 의 상태가 [신청접수], [이용중] 일 경우에만 버튼이 활성화됩니다.
 
 1. [Volume 증설] 버튼을 클릭합니다.  
-  ![NAS 용량증설 화면 갈무리](//static.toastoven.net/prod_infrastructure/nas/nas-extend-request.png)
+  ![NAS 용량증설 화면 갈무리](http://static.toastoven.net/prod_infrastructure/nas/nas-extend-request.png)
 
 2. 대화창에서 증설할 추가 용량 정보를 입력후 [신청] 버튼을 클릭합니다.
 
@@ -41,8 +41,8 @@ NAS 이용내역에서 Volume 증설을 할 수 있습니다. Volume증설은 NA
 
 NAS 이용내역에서 Volume 을 삭제 할 수 있습니다.
 
-1. [Volume 삭제] 버튼을 클릭합니다.
-  ![NAS volume 삭제 화면 갈무리](//static.toastoven.net/prod_infrastructure/nas/nas-volume-del-request.png)
+1. [Volume 삭제] 버튼을 클릭합니다.  
+  ![NAS volume 삭제 화면 갈무리](http://static.toastoven.net/prod_infrastructure/nas/nas-volume-del-request.png)
 
 2. 대화창에서 삭제할 정보를 확인 후 [신청] 버튼을 클릭합니다.
 
