@@ -1,4 +1,10 @@
-## Storage > NAS(Offline) > Release Notes
+## Storage > NAS(Offline) > 릴리스 노트
+
+### 2018.04.24
+
+#### 기능 개선
+
+* 수정/삭제시 Nas 정보가 삭제되는 현상이 수정되었습니다.
 
 ### 2017.07.10
 
