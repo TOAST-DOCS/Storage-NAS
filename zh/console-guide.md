@@ -2,49 +2,42 @@
 
 ## Apply for NAS
 
-1. Go to **Storage > NAS (offline)** and click **Apply for Product Use** on the **Pricing** tab.  
-  ![NAS 신청 화면 갈무리](http://static.toastoven.net/prod_infrastructure/nas/nas-request.png)
+1. Go to **Storage > NAS (offline)** and click **Apply for Product Use**.
 
-2. Enter information as follows: 
-  * Application Type 
-    To apply for a product use, **Create Volume** is automatically set. 
-  * Block Storage Name 
-    Enter a name with less than 8 characters in combination of alphabets and numbers: an actual NAS Volume is created in the name of the volume.
-  * Application Size (GB) 
-    NAS can be applied for at least 300 GB: select a size in the drop-down menu.  
-  * Use Snapshot  
-    Apply Nas Volume to save snapshot data: to restore by snapshot, contact administrator. 
-  * NAS Information 
-    NAS information refers to the name of NAS Volume that is actually assigned: to be created and entered by professional engineers.
+![nas_01_201812_en](	https://static.toastoven.net/prod_infrastructure/nas/nas_01_201812_en.png)
 
-3. NAS Volume, when completely created, shall be notified by email.  
+2. Complete application forms: 
+    * Volume Name 
+        * Enter a name with less than 8 characters in combination of alphabet and numbers: an actual NAS Volume is created with this name.
+    * VPC & Subnet
+        * NAS will be connected to this network.
+    * Application Size (GB) 
+        * NAS requires at least 300 GB. Choose a value between 300GB and 10,000GB with the slider.  
+    * Use Snapshot  
+        * Snapshot data will take space in NAS volume. To perform recovery through snapshot, please contact administrator. 
 
+![nas_02_201812_en](	https://static.toastoven.net/prod_infrastructure/nas/nas_02_201812_en.png)
 
-## NAS Usage Details 
+3. When NAS Volume is completely created, an email notification will be sent.  
 
-Shows details of usage at **Storage > NAS (offline) > Usage Details**.
+## Increase or Delete Volume 
 
-![NAS 이용내역 화면 갈무리](http://static.toastoven.net/prod_infrastructure/nas/nas-volume-list.png)
+You can increase or delete NAS volume.
+Increasing is available only when the NAS status is **Application Received**, or **In Service**.  
 
+![nas_03_201812_en](	https://static.toastoven.net/prod_infrastructure/nas/nas_03_201812_en.png)
 
-## Increase Volume 
-
-You can increase volume at NAS Usage Details: it is available only when the status of NAS is **Application Received**, or **In Service**.  
+To increase volume:
 
 1. Click **Increase Volume**.  
-  ![NAS 용량증설 화면 갈무리](http://static.toastoven.net/prod_infrastructure/nas/nas-extend-request.png)
 
-2. Enter volume information to add in the dialogue box and click **Apply**. 
+2. Enter volume information to add in the dialogue box and click **Confirm**. 
 
+To delete:
 
-## Delete Volume 
+1. Click **Delete Volume**.
 
-Delete volume from NAS Usage Details. 
-
-1. Click **Delete Volume**.  
-  ![NAS volume 삭제 화면 갈무리](http://static.toastoven.net/prod_infrastructure/nas/nas-volume-del-request.png)
-
-2. Check information to delete in the dialogue box and click **Apply**.
+3. Check  volume information to delete in the dialogue box and click **Confirm**.
 
 
 ## Attach Volume 
@@ -60,7 +53,7 @@ Delete volume from NAS Usage Details.
   sudo yum install nfs-utils rpcbind
   ```
 
-### Execute rpcbind 
+### Run rpcbind Service 
 
 ```
 sudo service rpcbind start
@@ -76,4 +69,3 @@ sudo mount -t nfs {nas source} {mount point}
   e.g) 192.168.0.241:/data
 * Mount Point: Directory to mount NAS volume   
   e.g) /mnt
-
