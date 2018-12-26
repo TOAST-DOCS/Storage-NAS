@@ -1,77 +1,71 @@
-## Storage > NAS(Offline) > コンソール使用ガイド
+## Storage > NAS (offline) > Console Guide
 
-## NASの申請
+## Apply for NAS
 
-1. **Storage > NAS (offline)**を選択して **利用料金**から **サービス利用申請** ボタンをクリックします。  
-  ![NAS申請画面キャプチャ](http://static.toastoven.net/prod_infrastructure/nas/nas-request.png)
+1. Go to **Storage > NAS (offline)** and click **Apply for Product Use**.
 
-2. 関連情報を入力します。
-  * 申請タイプ 
-   商品利用申請の場合、 **Volume作成**が自動的に入力されます。
-  * Block Storageの名前 
-    NASボリュームの名前です。英数字8桁以内の名前を入力します。入力されたボリューム名で実際のNASのボリュームが作成されます。
-  * 申請サイズ(GB)  
-    NASは新規作成時、 300GB以上から申請できます。スライドバーを調整して希望するサイズを設定します。
-  * Snapshotの使用 
-    Snapshotのデータ保存にはNASボリュームを使用します。 Snapshotを利用した復旧は別途お問い合わせください。
-  * NASの情報  
-    NASの情報は実際に割り当てられたNASのボリューム名です。専門エンジニアがNASのボリュームを作成した後に入力する情報です。
+![nas_01_201812_en](	https://static.toastoven.net/prod_infrastructure/nas/nas_01_201812_en.png)
 
-3. NASのボリューム作成が完了すると、メールで案内されます。
+2. Complete application forms: 
+    * Volume Name 
+        * Enter a name with less than 8 characters in combination of alphabet and numbers: an actual NAS Volume is created with this name.
+    * VPC & Subnet
+        * NAS will be connected to this network.
+    * Application Size (GB) 
+        * NAS requires at least 300 GB. Choose a value between 300GB and 10,000GB with the slider.  
+    * Use Snapshot  
+        * Snapshot data will take space in NAS volume. To perform recovery through snapshot, please contact administrator. 
 
+![nas_02_201812_en](	https://static.toastoven.net/prod_infrastructure/nas/nas_02_201812_en.png)
 
-## NASの利用内訳
+3. When NAS Volume is completely created, an email notification will be sent.  
 
-**Storage > NAS(offline)**を選択し、 **利用内訳**でNASを利用した内訳を確認できます。![NAS利用内訳画面キャプチャ](http://static.toastoven.net/prod_infrastructure/nas/nas-volume-list.png)
+## Increase or Delete Volume 
 
+You can increase or delete NAS volume.
+Increasing is available only when the NAS status is **Application Received**, or **In Service**.  
 
-## ボリュームの増設
+![nas_03_201812_en](	https://static.toastoven.net/prod_infrastructure/nas/nas_03_201812_en.png)
 
-NAS利用内訳でボリュームを増設できます。NASの状態が**申請受付**、 **利用中**の時のみ増設できます。
+To increase volume:
 
-1. **Volume増設** ボタンをクリックします。
-  ![NAS容量増設画面のキャプチャ](http://static.toastoven.net/prod_infrastructure/nas/nas-extend-request.png)
+1. Click **Increase Volume**.  
 
-2. 増設する追加容量の情報を指定し、**申請** ボタンをクリックします。
+2. Enter volume information to add in the dialogue box and click **Confirm**. 
 
+To delete:
 
-## ボリュームの削除
+1. Click **Delete Volume**.
 
-NAS利用内訳でボリュームを削除できます。
-
-1. **Volume削除** ボタンをクリックします。
-  ![NAS volume削除画面キャプチャ](http://static.toastoven.net/prod_infrastructure/nas/nas-volume-del-request.png)
-
-2. ダイアログボックスで削除する情報を確認し、**申請** ボタンをクリックします。
+3. Check  volume information to delete in the dialogue box and click **Confirm**.
 
 
-## ボリュームの接続
+## Attach Volume 
 
-### nfsパッケージのインストール
+### Install nfs Package
 
-* Debian、 Ubuntu: nfs-common、 rpcbind  
+* Debian, Ubuntu: nfs-common, rpcbind  
   ```
   sudo apt-get install nfs-common rpcbind
   ```
-* CentOS: nfs-utils、 rpcbind  
+* CentOS: nfs-utils, rpcbind  
   ```
   sudo yum install nfs-utils rpcbind
   ```
 
-### rpcbindサービスの実行
+### Run rpcbind Service 
 
 ```
 sudo service rpcbind start
 ```
 
-### NASボリュームのマウント
+### Mount NAS Volume 
 
 ```
 sudo mount -t nfs {nas source} {mount point}
 ```
 
-* nas source: NASボリューム情報  
- 例) 192.168.0.241:/data
-* mount point: NASボリュームをマウントするディレクトリ  
- 例) /mnt
-
+* NAS Source: NAS volume information 
+  e.g) 192.168.0.241:/data
+* Mount Point: Directory to mount NAS volume   
+  e.g) /mnt
