@@ -1,4 +1,4 @@
-﻿## Storage > NAS(Offline) > 概要
+## Storage > NAS(Offline) > 概要
 
 NASサービスを使用すると、インスタンスに共有ストレージを接続してデータを簡単に共有できます。
 
