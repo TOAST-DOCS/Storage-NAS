@@ -1,4 +1,4 @@
-﻿## Storage > NAS(Offline) > リリースノート
+## Storage > NAS(Offline) > リリースノート
 
 ### 2018.04.24
 
