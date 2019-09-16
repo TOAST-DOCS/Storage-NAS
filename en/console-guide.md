@@ -1,4 +1,7 @@
 ## Storage > NAS (offline) > Console Guide
+> [Notice]
+> NAS Volume can only be mounted on servers within the TOAST cloud platform infrastructure.
+> It is configured to communicate with private IP and is not accessible from outside.
 
 ## Apply for NAS
 
