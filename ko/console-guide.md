@@ -8,7 +8,7 @@
 
 ## NAS 신청
 
-1. **Storage > NAS(offline)** 으로 이동한 뒤, **NAS 서비스 이용 신청** 버튼을 클릭합니다..
+1. **Storage > NAS(offline)** 으로 이동한 뒤, **NAS 서비스 이용 신청** 버튼을 클릭합니다.
 
 ![nas_01_201812](https://static.toastoven.net/prod_infrastructure/nas/nas_01_201812.png)
 
