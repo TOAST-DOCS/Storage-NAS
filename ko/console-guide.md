@@ -3,9 +3,6 @@
 > NAS Volume은 TOAST 클라우드 플랫폼 인프라 내에 있는 서버에서만 마운트할 수 있습니다.
 > 사설 IP로 통신하도록 구성되어 있어 외부에서 접근이 불가합니다.
 
-## 동영상 가이드
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWXsonTbsh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## NAS 신청
 
 1. **Storage > NAS(offline)** 으로 이동한 뒤, **NAS 서비스 이용 신청** 버튼을 클릭합니다.
