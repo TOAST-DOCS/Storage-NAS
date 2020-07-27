@@ -4,7 +4,7 @@
 > 사설 IP로 통신하도록 구성되어 있어 외부에서 접근이 불가합니다.
 
 ## 동영상 가이드
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZWXsonTbsh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4P0t4Ttr7z8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## NAS 신청
 
