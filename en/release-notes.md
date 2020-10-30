@@ -1,5 +1,11 @@
 ## Storage > NAS (Offline) > Release Notes 
 
+### August 25, 2020
+
+#### New Releases 
+
+* Released NAS (offline) for Pyeongchon region 
+
 ### April 24, 2018 
 
 #### Feature Updates 
