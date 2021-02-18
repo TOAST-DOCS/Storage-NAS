@@ -1,16 +1,22 @@
-## Storage > NAS(Offline) > 릴리스 노트
+## Storage > NAS (Offline) > Release Notes 
 
-### 2018.04.24
+### August 25, 2020
 
-#### 기능 개선
+#### New Releases 
 
-* 수정/삭제시 Nas 정보가 삭제되는 현상이 수정되었습니다.
+* Released NAS (offline) for Pyeongchon region 
 
-### 2017.07.10
+### April 24, 2018 
 
-#### 신규 상품 출시
+#### Feature Updates 
 
-* NAS volume 을 프로젝트의 네트워크를 사용하여 인스턴스에 연결 할 수 있습니다.
-* 지원되는 프로토콜: NFS (v3)
-* snapshot 을 지원하여 특정 시점의 데이터로 복원 할 수 있습니다.
-* volume 증설: 100GB 단위로 증설 할 수 있습니다.
+* Fixed an issue in which Nas data when it is modified/deleted. 
+
+### July 10, 2017 
+
+#### New Releases 
+
+* It is available to attache NAS volume to instance via project network. 
+* Supported Protocol: NFS (v3)
+* Snapshot is supported to as to restore data to a particular point of time.  
+* Volume Scale Ups: Scaleup is available by 100GB.  
