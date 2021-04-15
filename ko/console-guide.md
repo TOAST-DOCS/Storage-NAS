@@ -22,6 +22,8 @@
     * Snapshot 사용
         * Snapshot data 저장은 NAS Volume 을 사용합니다. Snapshot 을 이용한 복구는 별도 문의 바랍니다.
 
+> [참고] NAS Volume을 사용하기 위해서는 VPC 라우팅 테이블이 인터넷 게이트웨이와 연결되어야 합니다. 인터넷이 되지 않는 VPC 에서는 NAS Volume을 할당받을 수 없습니다.
+
 ![nas_02_201812](https://static.toastoven.net/prod_infrastructure/nas/nas_02_201812.png)
 
 3. NAS Volume 생성이 완료되면 메일로 안내가 됩니다.
