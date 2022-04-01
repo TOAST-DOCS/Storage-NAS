@@ -7,8 +7,6 @@
 
 1. Go to **Storage > NAS (offline)** and click **Apply for Product Use**.
 
-![nas_01_201812_en](	https://static.toastoven.net/prod_infrastructure/nas/nas_01_201812_en.png)
-
 2. Complete application forms: 
     * Volume Name 
         * Enter a name with less than 8 characters in combination of alphabet and numbers: an actual NAS Volume is created with this name.
@@ -19,16 +17,12 @@
     * Use Snapshot  
         * Snapshot data will take space in NAS volume. To perform recovery through snapshot, please contact administrator. 
 
-![nas_02_201812_en](	https://static.toastoven.net/prod_infrastructure/nas/nas_02_201812_en.png)
-
 3. When NAS Volume is completely created, an email notification will be sent.  
 
 ## Increase or Delete Volume 
 
 You can increase or delete NAS volume.
 Increasing is available only when the NAS status is **Application Received**, or **In Service**.  
-
-![nas_03_201812_en](	https://static.toastoven.net/prod_infrastructure/nas/nas_03_201812_en.png)
 
 To increase volume:
 
