@@ -7,8 +7,6 @@
 
 1. **Storage > NAS(offline)** 으로 이동한 뒤, **NAS 서비스 이용 신청** 버튼을 클릭합니다.
 
-![nas_01_201812](https://static.toastoven.net/prod_infrastructure/nas/nas_01_201812.png)
-
 2. 관련 정보를 입력합니다.
     * Volume 이름
         * NAS Volume 이름으로 영문/숫자 형태로 8자리 이하의 이름을 입력합니다. 입력된 Volume 이름으로 실제 Nas Volume 이 생성이 됩니다.
@@ -21,15 +19,11 @@
 
 > [참고] NAS Volume을 사용하기 위해서는 VPC 라우팅 테이블이 인터넷 게이트웨이와 연결되어야 합니다. 인터넷이 되지 않는 VPC 에서는 NAS Volume을 할당받을 수 없습니다.
 
-![nas_02_201812](https://static.toastoven.net/prod_infrastructure/nas/nas_02_201812.png)
-
 3. NAS Volume 생성이 완료되면 메일로 안내가 됩니다.
 
 ## Volume 증설 및 삭제
 
 NAS 이용내역에서 Volume 증설 및 삭제를 할 수 있습니다. Volume증설은 NAS 의 상태가 **신청접수**, **이용중** 일 경우에만 버튼이 활성화됩니다.
-
-![nas_03_201812](https://static.toastoven.net/prod_infrastructure/nas/nas_03_201812.png)
 
 Volume 증설을 하기 위해서:
 
