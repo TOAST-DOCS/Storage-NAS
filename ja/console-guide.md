@@ -7,8 +7,6 @@
 
 1. **Storage > NAS(offline)** に移動した後、 **NASサービス利用申請** ボタンをクリックします。
 
-![nas_01_201812](https://static.toastoven.net/prod_infrastructure/nas/nas_01_201812.png)
-
 2. 関連情報を入力します。
     * Volume名
         * NAS Volume名です。英数字8文字以内の名前を入力します。入力されたVolume名で実際のNas Volumeが作成されます。
@@ -19,15 +17,12 @@
 * Snapshotの使用
         * Snapshot data保存は、NAS Volumeを使用します。Snapshotを利用した復旧は別途お問い合わせください。
         
-![nas_02_201812](https://static.toastoven.net/prod_infrastructure/nas/nas_02_201812.png)
 
 3. NAS Volumeの作成が完了したら、メールでご案内します。
 
 ## Volumeの増設と削除
 
 NAS利用内訳でVolumeの増設と削除ができます。Volumeの増設はNASの状態が**申請受付** 、**利用中** の時のみボタンが有効になります。
-
-![nas_03_201812](https://static.toastoven.net/prod_infrastructure/nas/nas_03_201812.png)
 
 Volume増設方法：
 
