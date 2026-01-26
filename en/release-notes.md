@@ -1,5 +1,11 @@
 ## Storage > NAS (Offline) > Release Notes 
 
+### January 21, 2026
+
+#### New Releases
+
+* Released NAS (offline) for Japan (Tokyo) region
+
 ### August 25, 2020
 
 #### New Releases 
