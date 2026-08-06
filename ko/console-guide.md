@@ -1,9 +1,13 @@
-## Storage > NAS(Offline) > 콘솔 사용 가이드
+<!-- pre-align:aligned sig=161527d29d06 -->
+
+<a id="storage-nas-offline-console-guide"></a>
+## Storage > NAS(Offline) > 콘솔 사용 가이드 { #storage-nas-offline-console-guide }
 > [참고] 
 > NAS Volume은 NHN Cloud 클라우드 플랫폼 인프라 내에 있는 서버에서만 마운트할 수 있습니다.
 > 사설 IP로 통신하도록 구성되어 있어 외부에서 접근이 불가합니다.
 
-## NAS 신청
+<a id="apply-for-nas"></a>
+## NAS 신청 { #apply-for-nas }
 
 1. **Storage > NAS(offline)** 으로 이동한 뒤, **NAS 서비스 이용 신청** 버튼을 클릭합니다.
 
@@ -21,7 +25,8 @@
 
 3. NAS Volume 생성이 완료되면 메일로 안내가 됩니다.
 
-## Volume 증설 및 삭제
+<a id="increase-or-delete-volume"></a>
+## Volume 증설 및 삭제 { #increase-or-delete-volume }
 
 NAS 이용내역에서 Volume 증설 및 삭제를 할 수 있습니다. Volume증설은 NAS 의 상태가 **신청접수**, **이용중** 일 경우에만 버튼이 활성화됩니다.
 
@@ -38,9 +43,11 @@ Volume 삭제를 하기 위해서:
 2. 대화창에서 삭제할 정보를 확인 후 **확인** 버튼을 클릭합니다.
 
 
-## Volume 연결
+<a id="attach-volume"></a>
+## Volume 연결 { #attach-volume }
 
-### nfs 패키지 설치
+<a id="install-nfs-package"></a>
+### nfs 패키지 설치 { #install-nfs-package }
 
 * Debian, Ubuntu: nfs-common, rpcbind  
   ```
@@ -51,13 +58,15 @@ Volume 삭제를 하기 위해서:
   sudo yum install nfs-utils rpcbind
   ```
 
-### rpcbind 서비스 실행
+<a id="run-rpcbind-service"></a>
+### rpcbind 서비스 실행 { #run-rpcbind-service }
 
 ```
 sudo service rpcbind start
 ```
 
-### NAS volume 마운트
+<a id="mount-nas-volume"></a>
+### NAS volume 마운트 { #mount-nas-volume }
 
 ```
 sudo mount -t nfs {nas source} {mount point}
