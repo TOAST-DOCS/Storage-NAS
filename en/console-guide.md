@@ -1,9 +1,13 @@
-## Storage > NAS (offline) > Console Guide
+<!-- pre-align:aligned sig=161527d29d06 -->
+
+<a id="storage-nas-offline-console-guide"></a>
+## Storage > NAS (offline) > Console Guide { #storage-nas-offline-console-guide }
 > [Notice]
 > NAS Volume can only be mounted on servers within the NHN cloud platform infrastructure.
 > It is configured to communicate with private IP and is not accessible from outside.
 
-## Apply for NAS
+<a id="apply-for-nas"></a>
+## Apply for NAS { #apply-for-nas }
 
 1. Go to **Storage > NAS (offline)** and click **Apply for Product Use**.
 
@@ -19,7 +23,8 @@
 
 3. When NAS Volume is completely created, an email notification will be sent.  
 
-## Increase or Delete Volume 
+<a id="increase-or-delete-volume"></a>
+## Increase or Delete Volume { #increase-or-delete-volume }
 
 You can increase or delete NAS volume.
 Increasing is available only when the NAS status is **Application Received**, or **In Service**.  
@@ -37,9 +42,11 @@ To delete:
 3. Check  volume information to delete in the dialogue box and click **Confirm**.
 
 
-## Attach Volume 
+<a id="attach-volume"></a>
+## Attach Volume { #attach-volume }
 
-### Install nfs Package
+<a id="install-nfs-package"></a>
+### Install nfs Package { #install-nfs-package }
 
 * Debian, Ubuntu: nfs-common, rpcbind  
   ```
@@ -50,13 +57,15 @@ To delete:
   sudo yum install nfs-utils rpcbind
   ```
 
-### Run rpcbind Service 
+<a id="run-rpcbind-service"></a>
+### Run rpcbind Service { #run-rpcbind-service }
 
 ```
 sudo service rpcbind start
 ```
 
-### Mount NAS Volume 
+<a id="mount-nas-volume"></a>
+### Mount NAS Volume { #mount-nas-volume }
 
 ```
 sudo mount -t nfs {nas source} {mount point}
